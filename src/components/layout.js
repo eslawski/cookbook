@@ -8,11 +8,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import 'semantic-ui-css/semantic.min.css'
+// import 'semantic-ui-css/semantic.min.css'
+import 'bootstrap/dist/css/bootstrap.css';
 
 import Header from "./header"
-import "./layout.css"
-import {Container} from "semantic-ui-react";
+// import "./layout.css"
+import {Container} from "react-bootstrap";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,16 +29,16 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-          <Container fluid style={{padding: "30px"}}>
+          <Container fluid>
               {children}
           </Container>
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
 export default Layout
