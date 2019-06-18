@@ -1,3 +1,9 @@
+Helpful Reads:
+
+How images work: https://www.orangejellyfish.com/blog/a-comprehensive-guide-to-images-in-gatsby/
+
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
