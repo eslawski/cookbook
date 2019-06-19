@@ -27,14 +27,12 @@ const RecipePage = ({data}) => {
                                 </Col>
                                 <Col lg={7} md={6} sm={6} xs={6} style={{padding: "0 5px 0 0"}}>
                                     <h2 style={{
-                                        fontSize: "3vmax"
-                                    }}>Banana Bread</h2>
+                                        fontSize: "2.75vmax"
+                                    }}>Chocolate Chip Cookies</h2>
                                     <div style={{
-                                        fontSize: "1.5vmax",
                                         color: "rgba(0,0,0,.6)"
                                     }}><FontAwesomeIcon icon={faUsers}/> 5-7</div>
                                     <div style={{
-                                        fontSize: "1.5vmax",
                                         color: "rgba(0,0,0,.6)"
                                     }}><FontAwesomeIcon icon={faClock}/> 45 minutes</div>
                                 </Col>

@@ -27,17 +27,23 @@ const mapRecipesToCards = recipes => {
                 <Link to={slug}>
                     <Card style={{height: "100%"}}>
                         <Img style={{borderRadius: "5px 5px 0 0"}} fluid={fluidImage}/>
-                        <Card.Body style={{padding: 10}}>
-                            <h6>{title}</h6>
-                            <Card.Text>
-                                <div style={{
-                                    fontSize: "1vmax",
-                                    color: "rgba(0,0,0,.6)"
-                                }}><FontAwesomeIcon icon={faUsers}/> 5-7</div>
-                                <div style={{
-                                    fontSize: "1vmax",
-                                    color: "rgba(0,0,0,.6)"
-                                }}><FontAwesomeIcon icon={faClock}/> 45 minutes</div>
+                        <Card.Body style={{padding: 10, minHeight: 100}}>
+                            <h5>{title}</h5>
+                            <Card.Text style={{
+                                fontSize: ".75em",
+                                position: "absolute",
+                                bottom: 5
+                            }}>
+                                    <span style={{
+                                        color: "rgba(0,0,0,.6)"
+                                    }}><FontAwesomeIcon icon={faUsers}/> 5-7</span>
+                                    <span style={{
+                                        border: ".5px solid rgba(0,0,0,.6)",
+                                        margin: "0 5px"
+                                    }}></span>
+                                    <span style={{
+                                        color: "rgba(0,0,0,.6)"
+                                    }}><FontAwesomeIcon icon={faClock}/> 45min</span>
                             </Card.Text>
                         </Card.Body>
                     </Card>

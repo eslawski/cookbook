@@ -2,7 +2,7 @@ Helpful Reads:
 
 How images work: https://www.orangejellyfish.com/blog/a-comprehensive-guide-to-images-in-gatsby/
 
-
+gatsby develop -H 0.0.0.0 -p 8000
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
