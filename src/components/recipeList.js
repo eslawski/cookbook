@@ -27,7 +27,7 @@ const mapRecipesToCards = recipes => {
                 <Link to={slug}>
                     <Card style={{height: "100%"}}>
                         <Img style={{borderRadius: "5px 5px 0 0"}} fluid={fluidImage}/>
-                        <Card.Body style={{padding: 10, minHeight: 100}}>
+                        <Card.Body style={{padding: 10, minHeight: 100, backgroundColor: "#F4F4F4"}}>
                             <h5>{title}</h5>
                             <Card.Text style={{
                                 fontSize: ".75em",
