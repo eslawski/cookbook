@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import Img from "gatsby-image"
-import {Container, Row, Col, Card, Form, Image} from "react-bootstrap";
+import {Container, Row, Col, Form} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUsers, faClock } from '@fortawesome/free-solid-svg-icons'
 
@@ -17,7 +17,8 @@ const RecipePage = ({data}) => {
                         <Container fluid style={{
                             padding: 0,
                             border: "1px solid darkgrey",
-                            borderRadius: 5
+                            borderRadius: 5,
+                            backgroundColor: "#F4F4F4"
                         }}>
 
                             <Row>
@@ -30,11 +31,11 @@ const RecipePage = ({data}) => {
                                     }}>Banana Bread</h2>
                                     <div style={{
                                         fontSize: "1.5vmax",
-                                        color: "rgba(0,0,0,.4)"
+                                        color: "rgba(0,0,0,.6)"
                                     }}><FontAwesomeIcon icon={faUsers}/> 5-7</div>
                                     <div style={{
                                         fontSize: "1.5vmax",
-                                        color: "rgba(0,0,0,.4)"
+                                        color: "rgba(0,0,0,.6)"
                                     }}><FontAwesomeIcon icon={faClock}/> 45 minutes</div>
                                 </Col>
                             </Row>
@@ -59,7 +60,7 @@ const RecipePage = ({data}) => {
                         <h3 style={{
                             paddingTop: 15,
                             borderBottom: "1px solid darkgrey"
-                        }}>Steps</h3>
+                        }}>Directions</h3>
                         <ol>
                             <li><p>
                                 Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 9x5 inch loaf pan.

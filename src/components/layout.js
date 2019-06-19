@@ -12,7 +12,7 @@ import { StaticQuery, graphql } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.css';
 
 import Header from "./header"
-// import "./layout.css"
+import "./global.css"
 import {Container} from "react-bootstrap";
 
 const Layout = ({ children }) => (

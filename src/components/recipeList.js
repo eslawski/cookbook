@@ -1,7 +1,9 @@
 import React from "react";
-import {Card} from 'semantic-ui-react'
 import {Link} from "gatsby";
 import Img from "gatsby-image"
+import {Container, Row, Col, Card, Form, Image} from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUsers, faClock } from '@fortawesome/free-solid-svg-icons'
 
 
 const mapRecipesToCards = recipes => {
@@ -18,22 +20,43 @@ const mapRecipesToCards = recipes => {
             }
         }
     }) => {
-        return {
-            as: Link,
-            height: 200,
-            to: slug,
-            childKey: id,
-            image: <Img fluid={fluidImage}/>,
-            header: title,
-            meta: <Card.Meta style={{color: 'dimgray'}}>{date}</Card.Meta>
-        }
+        return (
+            <Col lg={3} md={3} sm={4} xs={6} style={{
+                paddingBottom: 30
+            }}>
+                <Link to={slug}>
+                    <Card style={{height: "100%"}}>
+                        <Img style={{borderRadius: "5px 5px 0 0"}} fluid={fluidImage}/>
+                        <Card.Body style={{padding: 10}}>
+                            <h6>{title}</h6>
+                            <Card.Text>
+                                <div style={{
+                                    fontSize: "1vmax",
+                                    color: "rgba(0,0,0,.6)"
+                                }}><FontAwesomeIcon icon={faUsers}/> 5-7</div>
+                                <div style={{
+                                    fontSize: "1vmax",
+                                    color: "rgba(0,0,0,.6)"
+                                }}><FontAwesomeIcon icon={faClock}/> 45 minutes</div>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Link>
+            </Col>
+        );
     })
 };
 
 
 export const RecipeList = ({recipes}) => {
     return (
-        <Card.Group items={mapRecipesToCards(recipes)} itemsPerRow={4} stackable />
+        <Container>
+            <Row>
+                {
+                    mapRecipesToCards(recipes)
+                }
+            </Row>
+        </Container>
     );
 };
 
