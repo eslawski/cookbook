@@ -11,24 +11,21 @@ const mapRecipesToCards = recipes => {
         node: {
             id,
             fields: {slug},
-            frontmatter: {
-                title,
-                date,
-                image: {
-                    childImageSharp: {fluid: fluidImage}
-                }
+            name,
+            image: {
+                childImageSharp: {fluid: fluidImage}
             }
         }
     }) => {
         return (
-            <Col lg={3} md={3} sm={4} xs={6} style={{
+            <Col key={id} lg={3} md={3} sm={4} xs={6} style={{
                 paddingBottom: 30
             }}>
                 <Link to={slug}>
                     <Card style={{height: "100%"}}>
                         <Img style={{borderRadius: "5px 5px 0 0"}} fluid={fluidImage}/>
                         <Card.Body style={{padding: 10, minHeight: 100, backgroundColor: "#F4F4F4"}}>
-                            <h5>{title}</h5>
+                            <h5>{name}</h5>
                             <Card.Text style={{
                                 fontSize: ".75em",
                                 position: "absolute",

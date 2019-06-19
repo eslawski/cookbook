@@ -7,7 +7,7 @@ import {RecipeList} from "../components/recipeList";
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
-    <RecipeList recipes={data.allMarkdownRemark.edges}/>
+    <RecipeList recipes={data.allRecipesJson.edges}/>
   </Layout>
 );
 
@@ -16,21 +16,18 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allRecipesJson {
       edges {
         node {
           id
+          name
           fields {
             slug
           }
-          frontmatter {
-            title
-            date
-            image {
-              childImageSharp {
-                fluid(maxHeight: 300, maxWidth: 300) {
-                  ...GatsbyImageSharpFluid
-                }
+          image {
+            childImageSharp {
+              fluid(maxHeight: 300, maxWidth: 300) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

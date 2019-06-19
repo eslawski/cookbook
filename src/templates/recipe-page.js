@@ -23,7 +23,7 @@ const RecipePage = ({data}) => {
 
                             <Row>
                                 <Col lg={5} md={6} sm={6} xs={6}>
-                                    <Img style={{borderRadius: "5px"}} fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid}/>
+                                    <Img style={{borderRadius: "5px"}} fluid={data.recipesJson.image.childImageSharp.fluid}/>
                                 </Col>
                                 <Col lg={7} md={6} sm={6} xs={6} style={{padding: "0 5px 0 0"}}>
                                     <h2 style={{
@@ -83,15 +83,11 @@ export default RecipePage;
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      frontmatter {
-        title
-        date
-        image {
-          childImageSharp {
-            fluid(maxHeight: 300, maxWidth: 300) {
-              ...GatsbyImageSharpFluid
-            }
+    recipesJson(fields: { slug: { eq: $slug } }) {
+      image {
+        childImageSharp {
+          fluid(maxHeight: 300, maxWidth: 300) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
