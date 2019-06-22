@@ -15,9 +15,9 @@ const mapRecipesToCards = recipes => {
                 childImageSharp: {fluid: fluidImage}
             }
         }
-    }) => {
+    }, index) => {
         return (
-            <RecipeCard id={id}
+            <RecipeCard key={index}
                         slug={slug}
                         name={name}
                         image={fluidImage}
