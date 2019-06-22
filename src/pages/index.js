@@ -21,6 +21,8 @@ export const query = graphql`
         node {
           id
           name
+          serves
+          time
           fields {
             slug
           }

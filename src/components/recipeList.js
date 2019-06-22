@@ -1,6 +1,5 @@
 import React from "react";
 import {Container, Row} from "react-bootstrap";
-
 import {RecipeCard} from "./recipeCard";
 
 
@@ -10,13 +9,21 @@ const mapRecipesToCards = recipes => {
             id,
             fields: {slug},
             name,
+            serves,
+            time,
             image: {
                 childImageSharp: {fluid: fluidImage}
             }
         }
     }) => {
         return (
-            <RecipeCard id={id} slug={slug} name={name} image={fluidImage}/>
+            <RecipeCard id={id}
+                        slug={slug}
+                        name={name}
+                        image={fluidImage}
+                        serves={serves}
+                        time={time}
+            />
         );
     })
 };
