@@ -11,7 +11,9 @@ export const Ingredients = ({ingredients}) => {
             <h3 className={ingredientsStyles.header}>
                 <IconLabel faIcon={faListAlt} label="Ingredients" iconColor="#1f2a65" textColor="#000000"/>
             </h3>
-            {ingredients.map((ingredient) => <Form.Check label={ingredient}/>)}
+            <div className={ingredientsStyles.list}>
+                {ingredients.map((ingredient) => <Form.Check label={ingredient}/>)}
+            </div>
         </Container>
     );
 };

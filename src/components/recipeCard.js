@@ -10,7 +10,7 @@ import {IconLabel} from "./iconLabel";
 
 export const RecipeCard = ({id, slug, name, image, serves, time}) => {
     return (
-        <Col key={id} lg={3} md={3} sm={4} xs={6}>
+        <Col key={id} lg={3} md={3} sm={4} xs={6} className={recipeCardStyles.card}>
             <Link to={slug}>
                 <Card>
                     <Img className={recipeCardStyles.image} fluid={image}/>

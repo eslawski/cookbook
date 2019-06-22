@@ -1,7 +1,11 @@
 .container {
-    padding: 15px 0 0 0;
+    padding: 15px 0;
 }
 
 .header {
     border-bottom: 1px solid darkgrey;
+}
+
+.list {
+    padding-left: 1vmax;
 }

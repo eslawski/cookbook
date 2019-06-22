@@ -10,7 +10,7 @@ export const Directions = ({directions}) => {
             <h3 className={directionsStyles.header}>
                 <IconLabel faIcon={faThList} label="Directions" iconColor="#1f2a65" textColor="#000000"/>
             </h3>
-            <ol>
+            <ol className={directionsStyles.list}>
                 {directions.map((direction) => <li><p>{direction}</p></li>)}
             </ol>
         </>
