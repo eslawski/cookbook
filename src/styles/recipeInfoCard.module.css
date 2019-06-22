@@ -3,12 +3,5 @@
     border: 1px solid darkgrey;
     border-radius: 5px;
     background-color: #F4F4F4;
-}
-
-.image {
-    border-radius: 5px 0 0 5px;
-}
-
-.imageColumn {
-    padding-left: 1vmax;
+    overflow: hidden;
 }

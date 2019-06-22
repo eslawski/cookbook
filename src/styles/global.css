@@ -11,11 +11,6 @@ h4 { font-size: 1.5em; }
 h5 { font-size: 1.4em; }
 p, label { font-size: 1.25em}
 
-.row {
-  margin-right: -1vmax;
-  margin-left: -1vmax;
-}
-
 @media screen and (min-width: 376px) {
   html { font-size: .74em; }
 }
