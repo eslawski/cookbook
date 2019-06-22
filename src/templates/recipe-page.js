@@ -69,6 +69,22 @@ const RecipePage = ({data}) => {
                             <li><p>
                                 Bake in preheated oven for 60 to 65 minutes, until a toothpick inserted into center of the loaf comes out clean. Let bread cool in pan for 10 minutes, then turn out onto a wire rack.
                             </p></li>
+
+                            <li><p>
+                                Bake in preheated oven for 60 to 65 minutes, until a toothpick inserted into center of the loaf comes out clean. Let bread cool in pan for 10 minutes, then turn out onto a wire rack.
+                            </p></li>
+
+                            <li><p>
+                                Bake in preheated oven for 60 to 65 minutes, until a toothpick inserted into center of the loaf comes out clean. Let bread cool in pan for 10 minutes, then turn out onto a wire rack.
+                            </p></li>
+
+                            <li><p>
+                                Bake in preheated oven for 60 to 65 minutes, until a toothpick inserted into center of the loaf comes out clean. Let bread cool in pan for 10 minutes, then turn out onto a wire rack.
+                            </p></li>
+
+                            <li><p>
+                                Bake in preheated oven for 60 to 65 minutes, until a toothpick inserted into center of the loaf comes out clean. Let bread cool in pan for 10 minutes, then turn out onto a wire rack.
+                            </p></li>
                         </ol>
                     </Col>
                 </Row>

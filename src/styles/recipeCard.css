@@ -1,0 +1,14 @@
+.gatsby-image-wrapper {
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    padding: 10px;
+    background-color: #F4F4F4;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 5px;
+    color: rgba(0,0,0,.6);
+}
