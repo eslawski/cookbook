@@ -15,9 +15,9 @@ import "../styles/global.css"
 import {faUtensils} from '@fortawesome/free-solid-svg-icons';
 
 
-import { library, config } from '@fortawesome/fontawesome-svg-core'
-// config.autoAddCss = false
-library.add(faUtensils)
+import { library, config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
+library.add(faUtensils);
 
 
 const Layout = ({ children }) => (
