@@ -1,0 +1,17 @@
+.background {
+    background: #1f2a65;
+    margin-bottom: 15px;
+}
+
+.text {
+    margin: 0;
+    padding: 10px 0 10px 30px;
+}
+
+.link {
+    color: #FFFFFF !important;
+}
+
+.icon {
+    margin-right: 10px;
+}

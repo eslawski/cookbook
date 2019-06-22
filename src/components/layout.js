@@ -8,12 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-// import 'semantic-ui-css/semantic.min.css'
-import 'bootstrap/dist/css/bootstrap.css';
-
-import Header from "./header"
-import "./global.css"
 import {Container} from "react-bootstrap";
+import Header from "./header"
+import 'bootstrap/dist/css/bootstrap.css';
+import "../styles/global.css"
 
 const Layout = ({ children }) => (
   <StaticQuery
