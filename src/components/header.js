@@ -1,11 +1,13 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import {faUtensils} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-        background: `rebeccapurple`,
+        background: '#1f2a65',
         marginBottom: 15
     }}
   >
@@ -20,7 +22,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+            <FontAwesomeIcon icon={faUtensils} style={{marginRight: 10}}/>{siteTitle}
         </Link>
       </h1>
   </header>

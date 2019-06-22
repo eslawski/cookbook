@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image"
 import {Container, Row, Col, Form} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUsers, faClock } from '@fortawesome/free-solid-svg-icons'
+import { faUsers, faClock, faThList, faListAlt } from '@fortawesome/free-solid-svg-icons'
 
 const RecipePage = ({data}) => {
     console.log(data);
@@ -25,10 +25,8 @@ const RecipePage = ({data}) => {
                                 <Col lg={5} md={6} sm={6} xs={6}>
                                     <Img style={{borderRadius: "5px"}} fluid={data.recipesJson.image.childImageSharp.fluid}/>
                                 </Col>
-                                <Col lg={7} md={6} sm={6} xs={6} style={{padding: "0 5px 0 0"}}>
-                                    <h2 style={{
-                                        fontSize: "2.75vmax"
-                                    }}>Chocolate Chip Cookies</h2>
+                                <Col lg={7} md={6} sm={6} xs={6} style={{paddingTop: ".5em"}}>
+                                    <h2>Chocolate Chip Cookies</h2>
                                     <div style={{
                                         color: "rgba(0,0,0,.6)"
                                     }}><FontAwesomeIcon icon={faUsers}/> 5-7</div>
@@ -40,10 +38,10 @@ const RecipePage = ({data}) => {
                         </Container>
 
                         <Container fluid style={{
-                            paddingTop: 15
+                            padding: "15px 0 0 0"
                         }}>
-                            <h3 style={{borderBottom: "1px solid darkgrey"}}>Ingredients</h3>
-                            <Form.Check label="2 cups all-purpose flour" />
+                            <h3 style={{borderBottom: "1px solid darkgrey"}}><FontAwesomeIcon icon={faListAlt} style={{color: "#1f2a65"}}/> Ingredients</h3>
+                            <Form.Check size={'lg'} label="2 cups all-purpose flour" />
                             <Form.Check label="3/4 cup brown sugar" />
                             <Form.Check label="1 teaspoon baking soda" />
                             <Form.Check label="2 eggs, beaten" />
@@ -58,7 +56,7 @@ const RecipePage = ({data}) => {
                         <h3 style={{
                             paddingTop: 15,
                             borderBottom: "1px solid darkgrey"
-                        }}>Directions</h3>
+                        }}><FontAwesomeIcon icon={faThList} style={{color: "#27357e"}}/> Directions</h3>
                         <ol>
                             <li><p>
                                 Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 9x5 inch loaf pan.
