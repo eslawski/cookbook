@@ -4,7 +4,8 @@
  *
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
-import '@fortawesome/fontawesome-svg-core/styles.css';
+
+import "../utils/fixFontAwesome"
 
 import React from "react"
 import PropTypes from "prop-types"
@@ -12,13 +13,7 @@ import { StaticQuery, graphql } from "gatsby"
 import {Container} from "react-bootstrap";
 import Header from "./header"
 import 'bootstrap/dist/css/bootstrap.css';
-import "../styles/global.css"
-
-
-// import { library, config } from '@fortawesome/fontawesome-svg-core';
-// config.autoAddCss = false;
-// library.add(faUtensils);
-
+import "../styles/global.css";
 
 const Layout = ({ children }) => (
   <StaticQuery
